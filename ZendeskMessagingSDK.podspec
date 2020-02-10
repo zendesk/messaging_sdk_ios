@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "ZendeskMessagingSDK"
-  s.version      = "3.0.0"
+  s.version      = "3.1.1"
   s.summary      = "ZendeskMessagingSDK #{s.version.to_s}"
   s.homepage     = "https://developer.zendesk.com/embeddables"
   s.license      = {
