@@ -21,6 +21,6 @@ Pod::Spec.new do |s|
   s.swift_version = '5.1.3'
   s.source       = { :git => "https://github.com/zendesk/messaging_sdk_ios.git", :tag => s.version }
   s.vendored_frameworks = 'MessagingSDK.framework'
-  s.dependency 'ZendeskMessagingAPISDK', '~> 3.0.0'
-  s.dependency 'ZendeskCommonUISDK', '~> 4.0.0'
+  s.dependency 'ZendeskMessagingAPISDK', '~> 3.1.1'
+  s.dependency 'ZendeskCommonUISDK', '~> 4.1.1'
 end
