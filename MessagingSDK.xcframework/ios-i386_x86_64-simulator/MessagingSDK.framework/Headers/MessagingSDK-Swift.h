@@ -210,6 +210,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 
 
 
+@protocol ZDKMessagingDelegate;
 
 /// The Messaging class coordinates Zendesk’s product UI engines,
 /// to allow them to work seamlessly in a single unified messaging interface.
@@ -222,9 +223,15 @@ SWIFT_CLASS_NAMED("Messaging")
 /// The <code>Messaging</code> singleton instance
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) ZDKMessaging * _Nonnull instance;)
 + (ZDKMessaging * _Nonnull)instance SWIFT_WARN_UNUSED_RESULT;
+/// Returns <code>true</code> if Messaging UI is presented
+@property (nonatomic, readonly) BOOL isMessagingPresented;
+/// Messaging delegate allows you to observe user events that happen in the <code>MessagingSDK</code>.
+@property (nonatomic, weak) id <ZDKMessagingDelegate> _Nullable delegate;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
+
+
 
 @protocol ZDKEngine;
 @protocol ZDKConfiguration;
@@ -255,8 +262,6 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) ZDKMessaging
 
 
 
-
-
 @class UIImage;
 
 /// Class used to configure the Messaging screen.
@@ -270,6 +275,42 @@ SWIFT_CLASS_NAMED("MessagingConfiguration")
 @property (nonatomic, strong) UIImage * _Nonnull botAvatar;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
+
+enum ZDKMessagingUIEvent : NSInteger;
+
+SWIFT_PROTOCOL_NAMED("MessagingDelegate")
+@protocol ZDKMessagingDelegate
+/// Allows you to observe UI events that occured in <code>Messaging</code>’s UI.
+/// \param messaging <code>Messaging</code> instance
+///
+/// \param event event of type <code>MessagingUIEvent</code>
+///
+/// \param context optional additional context that comes along with the <code>event</code>
+///
+- (void)messaging:(ZDKMessaging * _Nonnull)messaging didPerformEvent:(enum ZDKMessagingUIEvent)event context:(id _Nullable)context;
+/// Optional <code>MessagingDelegate</code> method that allows custom URL link handling.
+/// note:
+/// Return <code>true</code> when there is no way to handle a specific URL and <code>Messaging</code> will handle it.
+/// \param messaging <code>Messaging</code> instance
+///
+/// \param url The <code>URL</code> the user tapped
+///
+///
+/// returns:
+/// Return <code>true</code> if Messaging should handle the URL. Return <code>false</code> if there is a specified URL flow.
+- (BOOL)messaging:(ZDKMessaging * _Nonnull)messaging shouldOpenURL:(NSURL * _Nonnull)url SWIFT_WARN_UNUSED_RESULT;
+@end
+
+typedef SWIFT_ENUM_NAMED(NSInteger, ZDKMessagingUIEvent, "MessagingUIEvent", open) {
+  ZDKMessagingUIEventViewDidLoad = 0,
+  ZDKMessagingUIEventViewWillAppear = 1,
+  ZDKMessagingUIEventViewDidAppear = 2,
+  ZDKMessagingUIEventViewWillDisappear = 3,
+  ZDKMessagingUIEventViewDidDisappear = 4,
+  ZDKMessagingUIEventViewDidLayoutSubviews = 5,
+/// Fired once the Messaging UI is closed and no longer visible to the user
+  ZDKMessagingUIEventViewControllerDidClose = 6,
+};
 
 
 
@@ -489,6 +530,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 
 
 
+@protocol ZDKMessagingDelegate;
 
 /// The Messaging class coordinates Zendesk’s product UI engines,
 /// to allow them to work seamlessly in a single unified messaging interface.
@@ -501,9 +543,15 @@ SWIFT_CLASS_NAMED("Messaging")
 /// The <code>Messaging</code> singleton instance
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) ZDKMessaging * _Nonnull instance;)
 + (ZDKMessaging * _Nonnull)instance SWIFT_WARN_UNUSED_RESULT;
+/// Returns <code>true</code> if Messaging UI is presented
+@property (nonatomic, readonly) BOOL isMessagingPresented;
+/// Messaging delegate allows you to observe user events that happen in the <code>MessagingSDK</code>.
+@property (nonatomic, weak) id <ZDKMessagingDelegate> _Nullable delegate;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
+
+
 
 @protocol ZDKEngine;
 @protocol ZDKConfiguration;
@@ -534,8 +582,6 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) ZDKMessaging
 
 
 
-
-
 @class UIImage;
 
 /// Class used to configure the Messaging screen.
@@ -549,6 +595,42 @@ SWIFT_CLASS_NAMED("MessagingConfiguration")
 @property (nonatomic, strong) UIImage * _Nonnull botAvatar;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
+
+enum ZDKMessagingUIEvent : NSInteger;
+
+SWIFT_PROTOCOL_NAMED("MessagingDelegate")
+@protocol ZDKMessagingDelegate
+/// Allows you to observe UI events that occured in <code>Messaging</code>’s UI.
+/// \param messaging <code>Messaging</code> instance
+///
+/// \param event event of type <code>MessagingUIEvent</code>
+///
+/// \param context optional additional context that comes along with the <code>event</code>
+///
+- (void)messaging:(ZDKMessaging * _Nonnull)messaging didPerformEvent:(enum ZDKMessagingUIEvent)event context:(id _Nullable)context;
+/// Optional <code>MessagingDelegate</code> method that allows custom URL link handling.
+/// note:
+/// Return <code>true</code> when there is no way to handle a specific URL and <code>Messaging</code> will handle it.
+/// \param messaging <code>Messaging</code> instance
+///
+/// \param url The <code>URL</code> the user tapped
+///
+///
+/// returns:
+/// Return <code>true</code> if Messaging should handle the URL. Return <code>false</code> if there is a specified URL flow.
+- (BOOL)messaging:(ZDKMessaging * _Nonnull)messaging shouldOpenURL:(NSURL * _Nonnull)url SWIFT_WARN_UNUSED_RESULT;
+@end
+
+typedef SWIFT_ENUM_NAMED(NSInteger, ZDKMessagingUIEvent, "MessagingUIEvent", open) {
+  ZDKMessagingUIEventViewDidLoad = 0,
+  ZDKMessagingUIEventViewWillAppear = 1,
+  ZDKMessagingUIEventViewDidAppear = 2,
+  ZDKMessagingUIEventViewWillDisappear = 3,
+  ZDKMessagingUIEventViewDidDisappear = 4,
+  ZDKMessagingUIEventViewDidLayoutSubviews = 5,
+/// Fired once the Messaging UI is closed and no longer visible to the user
+  ZDKMessagingUIEventViewControllerDidClose = 6,
+};
 
 
 
