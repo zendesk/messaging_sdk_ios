@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "ZendeskMessagingSDK"
-  s.version      = "3.8.0"
+  s.version      = "3.8.1"
   s.summary      = "ZendeskMessagingSDK #{s.version.to_s}"
   s.homepage     = "https://developer.zendesk.com/embeddables"
   s.license      = {
@@ -18,10 +18,13 @@ Pod::Spec.new do |s|
   s.author       = 'Zendesk'
   s.platform     = :ios, '10.0'
   s.requires_arc = true
-  s.swift_version = '5.2.4'
+  s.swift_version = '5.3'
+  s.cocoapods_version = '>= 1.9.3'
+  s.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
+  s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
   s.source       = { :git => "https://github.com/zendesk/messaging_sdk_ios.git", :tag => s.version }
-  s.vendored_frameworks = 'MessagingSDK.framework'
-  s.preserve_paths = 'MessagingSDK.framework', 'MessagingSDK.dSYMs/*.dSYM'
-  s.dependency 'ZendeskMessagingAPISDK', '~> 3.8.0'
-  s.dependency 'ZendeskCommonUISDK', '~> 6.0.0'
+  s.vendored_frameworks = 'MessagingSDK.xcframework'
+  s.preserve_paths = 'MessagingSDK.xcframework', 'MessagingSDK.dSYMs/*.dSYM'
+  s.dependency 'ZendeskMessagingAPISDK', '~> 3.8.1'
+  s.dependency 'ZendeskCommonUISDK', '~> 6.1.0'
 end
