@@ -15,7 +15,7 @@ let package = Package(
     ],
     dependencies: [
         .package(name: "ZendeskMessagingAPISDK",
-                 url: "https://github.com/zendesk/messagingapi_sdk_ios/releases/download/3.8.1/MessagingAPI.xcframework.zip",
+                 url: "https://github.com/zendesk/messagingapi_sdk_ios",
                  from: "3.8.1"
         )
     ],
