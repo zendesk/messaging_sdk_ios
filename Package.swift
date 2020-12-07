@@ -22,8 +22,7 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "ZendeskMessagingSDK",
-            url: "https://github.com/zendesk/messaging_sdk_ios/releases/download/3.8.1/MessagingSDK.xcframework.zip",
-            checksum: "302faf9822554defdcedeaeb4f48f66d20efb602aca1d86daf620fd04322c8af"
+            path: "MessagingSDK.xcframework"
         ),
         .target(name: "ZendeskMessagingSDKTargets",
                 dependencies: [
