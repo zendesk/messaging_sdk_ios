@@ -1,0 +1,5 @@
+"message.log.article.selection.formatter" = "%1$@ a ouvert l’article « %2$@ »";
+"message.log.article.suggestion.message" = "J’ai trouvé ces articles :";
+"message.log.default.visitor.name" = "Visiteur";
+"message.log.message.failed_to_send" = "[Échec de l’envoi]";
+"message.log.transfer.option.selection.formatter" = "%1$@ a sélectionné %2$@";

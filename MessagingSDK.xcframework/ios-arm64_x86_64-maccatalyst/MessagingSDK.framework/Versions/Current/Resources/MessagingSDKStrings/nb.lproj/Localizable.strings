@@ -1,0 +1,5 @@
+"message.log.article.selection.formatter" = "%1$@ åpnet artikkelen '%2$@\'";
+"message.log.article.suggestion.message" = "Jeg fant disse artiklene:";
+"message.log.default.visitor.name" = "Besøkende";
+"message.log.message.failed_to_send" = "[Kunne ikke sende]";
+"message.log.transfer.option.selection.formatter" = "%1$@ valgte %2$@";

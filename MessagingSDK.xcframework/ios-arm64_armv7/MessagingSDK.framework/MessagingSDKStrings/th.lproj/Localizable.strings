@@ -1,0 +1,5 @@
+"message.log.article.selection.formatter" = "%1$@ เปิดบทความ '%2$@'";
+"message.log.article.suggestion.message" = "ฉันพบบทความเหล่านี้";
+"message.log.default.visitor.name" = "ผู้เยี่ยมชม";
+"message.log.message.failed_to_send" = "[ส่งไม่สำเร็จ]";
+"message.log.transfer.option.selection.formatter" = "%1$@ เลือก %2$@";

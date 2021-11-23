@@ -1,0 +1,5 @@
+"message.log.article.selection.formatter" = "%1$@ megnyitotta a következő cikket: „%2$@”";
+"message.log.article.suggestion.message" = "Ezeket a cikkeket találtam:";
+"message.log.default.visitor.name" = "Látogató";
+"message.log.message.failed_to_send" = "(A küldés sikertelen)";
+"message.log.transfer.option.selection.formatter" = "A(z) %1$@ kijelölte ezt: %2$@";

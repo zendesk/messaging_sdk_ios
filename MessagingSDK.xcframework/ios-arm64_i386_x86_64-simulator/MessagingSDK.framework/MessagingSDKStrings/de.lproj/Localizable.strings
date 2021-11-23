@@ -1,0 +1,5 @@
+"message.log.article.selection.formatter" = "%1$@ hat Beitrag „%2$@“ geöffnet";
+"message.log.article.suggestion.message" = "Ich habe diese Beiträge gefunden:";
+"message.log.default.visitor.name" = "Besucher";
+"message.log.message.failed_to_send" = "[Fehler beim Senden]";
+"message.log.transfer.option.selection.formatter" = "%1$@ hat %2$@ ausgewählt";

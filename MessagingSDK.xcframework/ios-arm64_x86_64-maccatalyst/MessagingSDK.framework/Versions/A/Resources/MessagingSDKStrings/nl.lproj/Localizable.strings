@@ -1,0 +1,5 @@
+"message.log.article.selection.formatter" = "%1$@ heeft het artikel '%2$@' geopend";
+"message.log.article.suggestion.message" = "Ik heb deze artikelen gevonden:";
+"message.log.default.visitor.name" = "Bezoeker";
+"message.log.message.failed_to_send" = "[Verzenden mislukt]";
+"message.log.transfer.option.selection.formatter" = "%1$@ heeft %2$@ geselecteerd";

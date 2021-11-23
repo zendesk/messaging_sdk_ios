@@ -1,0 +1,5 @@
+"message.log.article.selection.formatter" = "%1$@ 已開啟文章「%2$@」";
+"message.log.article.suggestion.message" = "我已找到這些文章：";
+"message.log.default.visitor.name" = "訪客";
+"message.log.message.failed_to_send" = "[傳送失敗]";
+"message.log.transfer.option.selection.formatter" = "%1$@ 已選取 %2$@";

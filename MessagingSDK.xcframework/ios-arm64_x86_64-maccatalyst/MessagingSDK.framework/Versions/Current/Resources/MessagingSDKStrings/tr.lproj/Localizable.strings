@@ -1,0 +1,5 @@
+"message.log.article.selection.formatter" = "%1$@ şu makaleyi açtı: \"%2$@\"";
+"message.log.article.suggestion.message" = "Şu makaleleri buldum:";
+"message.log.default.visitor.name" = "Ziyaretçi";
+"message.log.message.failed_to_send" = "[Gönderilemedi]";
+"message.log.transfer.option.selection.formatter" = "%1$@ seçim yaptı: %2$@";

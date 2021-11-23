@@ -1,0 +1,5 @@
+"message.log.article.selection.formatter" = "Ο χρήστης %1$@ άνοιξε το άρθρο \"%2$@\"";
+"message.log.article.suggestion.message" = "Βρήκα αυτά τα άρθρα:";
+"message.log.default.visitor.name" = "Επισκέπτης";
+"message.log.message.failed_to_send" = "(Η αποστολή απέτυχε)";
+"message.log.transfer.option.selection.formatter" = "Ο χρήστης %1$@ επέλεξε %2$@";
