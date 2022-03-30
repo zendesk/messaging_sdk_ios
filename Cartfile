@@ -1,2 +1,2 @@
-github "zendesk/messagingapi_sdk_ios" ~> 3.8.3
-github "zendesk/commonui_sdk_ios" ~> 6.1.2
+github "zendesk/messagingapi_sdk_ios" ~> 3.8.4
+github "zendesk/commonui_sdk_ios" ~> 6.1.3
