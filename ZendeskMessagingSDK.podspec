@@ -1,8 +1,8 @@
 Pod::Spec.new do |s|
   s.name         = "ZendeskMessagingSDK"
-  s.version      = "3.8.4"
+  s.version      = "3.8.5"
   s.summary      = "ZendeskMessagingSDK #{s.version.to_s}"
-  s.homepage     = "https://developer.zendesk.com/embeddables"
+  s.homepage     = "https://developer.zendesk.com/documentation/classic-web-widget-sdks/"
   s.license      = {
     :type => 'Copyright',
     :text => <<-LICENSE
@@ -22,6 +22,6 @@ Pod::Spec.new do |s|
   s.cocoapods_version = '>= 1.10.0'
   s.source       = { :git => "https://github.com/zendesk/messaging_sdk_ios.git", :tag => s.version }
   s.vendored_frameworks = 'MessagingSDK.xcframework'
-  s.dependency 'ZendeskMessagingAPISDK', '3.8.4'
-  s.dependency 'ZendeskCommonUISDK', '6.1.3'
+  s.dependency 'ZendeskMessagingAPISDK', '3.8.5'
+  s.dependency 'ZendeskCommonUISDK', '6.1.4'
 end
