@@ -1,5 +1,0 @@
-"message.log.article.selection.formatter" = "%1$@は記事「%2$@」を開きました";
-"message.log.article.suggestion.message" = "これらの記事を見つけました:";
-"message.log.default.visitor.name" = "訪問者";
-"message.log.message.failed_to_send" = "[送信できませんでした]";
-"message.log.transfer.option.selection.formatter" = "%1$@さんが%2$@を選択しました";

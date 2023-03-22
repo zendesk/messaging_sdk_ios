@@ -1,5 +1,0 @@
-"message.log.article.selection.formatter" = "%1$@님이 '%2$@' 문서를 열었습니다.";
-"message.log.article.suggestion.message" = "다음 문서를 찾았습니다.";
-"message.log.default.visitor.name" = "방문자";
-"message.log.message.failed_to_send" = "[보내지 못함]";
-"message.log.transfer.option.selection.formatter" = "%1$@님이 %2$@을(를) 선택했습니다.";

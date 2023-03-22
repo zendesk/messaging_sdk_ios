@@ -1,5 +1,0 @@
-"message.log.article.selection.formatter" = "%1$@ a deschis articolul „%2$@”";
-"message.log.article.suggestion.message" = "Am găsit aceste articole:";
-"message.log.default.visitor.name" = "Vizitator";
-"message.log.message.failed_to_send" = "[Trimiterea a eșuat]";
-"message.log.transfer.option.selection.formatter" = "%1$@ a selectat %2$@";

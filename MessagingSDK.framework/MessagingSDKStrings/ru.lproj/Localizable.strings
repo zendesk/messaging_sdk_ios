@@ -1,5 +1,0 @@
-"message.log.article.selection.formatter" = "Пользователь %1$@ открыл статью «%2$@»";
-"message.log.article.suggestion.message" = "Найдены такие статьи:";
-"message.log.default.visitor.name" = "Посетитель";
-"message.log.message.failed_to_send" = "[Не удалось отправить]";
-"message.log.transfer.option.selection.formatter" = "Пользователь %1$@ выбрал %2$@";

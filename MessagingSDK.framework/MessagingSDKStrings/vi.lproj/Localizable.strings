@@ -1,5 +1,0 @@
-"message.log.article.selection.formatter" = "%1$@ đã mở bài viết '%2$@'";
-"message.log.article.suggestion.message" = "Tôi tìm thấy các bài viết sau:";
-"message.log.default.visitor.name" = "Khách truy cập";
-"message.log.message.failed_to_send" = "[Không gửi được]";
-"message.log.transfer.option.selection.formatter" = "%1$@ đã chọn %2$@";

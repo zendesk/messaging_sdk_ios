@@ -1,5 +1,0 @@
-"message.log.article.selection.formatter" = "%1$@ отвори статията „%2$@“";
-"message.log.article.suggestion.message" = "Намерих тези статии:";
-"message.log.default.visitor.name" = "Посетител";
-"message.log.message.failed_to_send" = "[Неуспешно изпращане]";
-"message.log.transfer.option.selection.formatter" = "%1$@ избра %2$@";

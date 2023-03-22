@@ -1,5 +1,0 @@
-"message.log.article.selection.formatter" = "%1$@ avasi artikkelin '%2$@'";
-"message.log.article.suggestion.message" = "Löysin nämä artikkelit:";
-"message.log.default.visitor.name" = "Vierailija";
-"message.log.message.failed_to_send" = "[Lähetys epäonnistui]";
-"message.log.transfer.option.selection.formatter" = "%1$@ valitsi seuraavan: %2$@";
