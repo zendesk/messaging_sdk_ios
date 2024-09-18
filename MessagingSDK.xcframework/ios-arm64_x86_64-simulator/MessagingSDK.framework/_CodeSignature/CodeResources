@@ -18,7 +18,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		q//onlm9J94Ee6C0Eo6Zonccz0U=
+		1DpWbIJFU+5sEUQaCaJHBOgmjcQ=
 		</data>
 		<key>MessagingSDKStrings/Info.plist</key>
 		<data>
@@ -348,7 +348,7 @@
 		</data>
 		<key>Modules/MessagingSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		qn6trBMTmhv0/mPddK47tcG0R+A=
+		Wp1BAShO3vV2PcBKGqZnpmKuRMo=
 		</data>
 		<key>Modules/MessagingSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -368,7 +368,7 @@
 		</data>
 		<key>Modules/MessagingSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		5NvZGkWPmsSoCgEGA36OehVi3Ow=
+		STnItH5cIyWQILL/8LoAi9JFJUY=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -743,7 +743,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			zfWC1yT9mZ+9nEfYsjW/l8OA9M13dNzimR3S8cLvjnE=
+			FMXipg7aJ9bCgcu1X5lPmDKQ/yAK9G4PCF8LSzv+2dM=
 			</data>
 		</dict>
 		<key>Modules/MessagingSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
@@ -778,7 +778,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			DNnubAuVgERZVDO97i++FfbcBiT8KhAgUwYsTKVx8dY=
+			zi4bLfpXnKlLNBFcnl9P80DAV0vYlPuH7rRow7htWfQ=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
