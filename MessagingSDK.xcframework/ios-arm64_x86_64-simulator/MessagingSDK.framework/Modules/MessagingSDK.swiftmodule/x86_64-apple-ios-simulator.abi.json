@@ -1,8 +1,8 @@
 {
   "ABIRoot": {
     "kind": "Root",
-    "name": "TopLevel",
-    "printedName": "TopLevel",
+    "name": "MessagingSDK",
+    "printedName": "MessagingSDK",
     "children": [
       {
         "kind": "Import",
@@ -154,7 +154,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "WeakStorage",
-                "printedName": "MessagingSDK.MessagingDelegate?"
+                "printedName": "(any MessagingSDK.MessagingDelegate)?"
               }
             ],
             "declKind": "Var",
@@ -181,12 +181,12 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "MessagingSDK.MessagingDelegate?",
+                    "printedName": "(any MessagingSDK.MessagingDelegate)?",
                     "children": [
                       {
                         "kind": "TypeNominal",
                         "name": "MessagingDelegate",
-                        "printedName": "MessagingSDK.MessagingDelegate",
+                        "printedName": "any MessagingSDK.MessagingDelegate",
                         "usr": "c:@M@MessagingSDK@objc(pl)ZDKClassicMessagingDelegate"
                       }
                     ],
@@ -217,12 +217,12 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "MessagingSDK.MessagingDelegate?",
+                    "printedName": "(any MessagingSDK.MessagingDelegate)?",
                     "children": [
                       {
                         "kind": "TypeNominal",
                         "name": "MessagingDelegate",
-                        "printedName": "MessagingSDK.MessagingDelegate",
+                        "printedName": "any MessagingSDK.MessagingDelegate",
                         "usr": "c:@M@MessagingSDK@objc(pl)ZDKClassicMessagingDelegate"
                       }
                     ],
@@ -277,12 +277,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "Array",
-                "printedName": "[MessagingAPI.Engine]",
+                "printedName": "[any MessagingAPI.Engine]",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "Engine",
-                    "printedName": "MessagingAPI.Engine",
+                    "printedName": "any MessagingAPI.Engine",
                     "usr": "s:12MessagingAPI6EngineP"
                   }
                 ],
@@ -291,12 +291,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "Array",
-                "printedName": "[SDKConfigurations.Configuration]",
+                "printedName": "[any SDKConfigurations.Configuration]",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "Configuration",
-                    "printedName": "SDKConfigurations.Configuration",
+                    "printedName": "any SDKConfigurations.Configuration",
                     "usr": "c:@M@SDKConfigurations@objc(pl)ZDKConfiguration"
                   }
                 ],
@@ -329,7 +329,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "MessagingCoordinatorProtocol",
-                "printedName": "CommonUISDK.MessagingCoordinatorProtocol",
+                "printedName": "any CommonUISDK.MessagingCoordinatorProtocol",
                 "usr": "s:11CommonUISDK28MessagingCoordinatorProtocolP"
               },
               {
@@ -390,7 +390,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "ConversationLogProtocol",
-                "printedName": "MessagingAPI.ConversationLogProtocol",
+                "printedName": "any MessagingAPI.ConversationLogProtocol",
                 "usr": "s:12MessagingAPI23ConversationLogProtocolP"
               }
             ],
@@ -470,6 +470,20 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -1023,6 +1037,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -1163,6 +1191,22 @@
         "declAttributes": [
           "AccessControl",
           "ObjC"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
         ]
       },
       {
@@ -1544,6 +1588,22 @@
         "declAttributes": [
           "Final",
           "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
         ]
       },
       {
@@ -1921,6 +1981,20 @@
           },
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -2110,6 +2184,20 @@
           },
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "LoggableMessage",
             "printedName": "LoggableMessage",
             "usr": "s:12MessagingAPI15LoggableMessageP",
@@ -2188,6 +2276,20 @@
           },
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "LoggableMessage",
             "printedName": "LoggableMessage",
             "usr": "s:12MessagingAPI15LoggableMessageP",
@@ -2263,6 +2365,20 @@
             "printedName": "Equatable",
             "usr": "s:SQ",
             "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
           },
           {
             "kind": "Conformance",
@@ -2351,6 +2467,20 @@
           },
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "LoggableMessage",
             "printedName": "LoggableMessage",
             "usr": "s:12MessagingAPI15LoggableMessageP",
@@ -2433,6 +2563,20 @@
             "printedName": "Equatable",
             "usr": "s:SQ",
             "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
           },
           {
             "kind": "Conformance",
@@ -2528,6 +2672,20 @@
           },
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "LoggableMessage",
             "printedName": "LoggableMessage",
             "usr": "s:12MessagingAPI15LoggableMessageP",
@@ -2620,6 +2778,20 @@
           },
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "LoggableMessage",
             "printedName": "LoggableMessage",
             "usr": "s:12MessagingAPI15LoggableMessageP",
@@ -2705,6 +2877,20 @@
           },
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "LoggableMessage",
             "printedName": "LoggableMessage",
             "usr": "s:12MessagingAPI15LoggableMessageP",
@@ -2783,6 +2969,20 @@
           },
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "LoggableMessage",
             "printedName": "LoggableMessage",
             "usr": "s:12MessagingAPI15LoggableMessageP",
@@ -2844,118 +3044,6 @@
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/admin\/actions-runner\/_work\/zendesk_mobile_sdks_ios\/zendesk_mobile_sdks_ios\/MessagingSDK\/MessagingSDK\/Source\/Messaging.swift",
-      "kind": "BooleanLiteral",
-      "offset": 3268,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/admin\/actions-runner\/_work\/zendesk_mobile_sdks_ios\/zendesk_mobile_sdks_ios\/MessagingSDK\/MessagingSDK\/Source\/Messaging.swift",
-      "kind": "BooleanLiteral",
-      "offset": 3797,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/admin\/actions-runner\/_work\/zendesk_mobile_sdks_ios\/zendesk_mobile_sdks_ios\/MessagingSDK\/MessagingSDK\/Source\/Messaging.swift",
-      "kind": "BooleanLiteral",
-      "offset": 3830,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/admin\/actions-runner\/_work\/zendesk_mobile_sdks_ios\/zendesk_mobile_sdks_ios\/MessagingSDK\/MessagingSDK\/Source\/Messaging.swift",
-      "kind": "Array",
-      "offset": 4305,
-      "length": 2,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/admin\/actions-runner\/_work\/zendesk_mobile_sdks_ios\/zendesk_mobile_sdks_ios\/MessagingSDK\/MessagingSDK\/Source\/Messaging.swift",
-      "kind": "BooleanLiteral",
-      "offset": 4485,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/admin\/actions-runner\/_work\/zendesk_mobile_sdks_ios\/zendesk_mobile_sdks_ios\/MessagingSDK\/MessagingSDK\/Source\/Messaging.swift",
-      "kind": "IntegerLiteral",
-      "offset": 6774,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/admin\/actions-runner\/_work\/zendesk_mobile_sdks_ios\/zendesk_mobile_sdks_ios\/MessagingSDK\/MessagingSDK\/Source\/Messaging.swift",
-      "kind": "BooleanLiteral",
-      "offset": 6789,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/admin\/actions-runner\/_work\/zendesk_mobile_sdks_ios\/zendesk_mobile_sdks_ios\/MessagingSDK\/MessagingSDK\/Source\/Messaging.swift",
-      "kind": "BooleanLiteral",
-      "offset": 7338,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/admin\/actions-runner\/_work\/zendesk_mobile_sdks_ios\/zendesk_mobile_sdks_ios\/MessagingSDK\/MessagingSDK\/Source\/Messaging.swift",
-      "kind": "BooleanLiteral",
-      "offset": 8900,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/admin\/actions-runner\/_work\/zendesk_mobile_sdks_ios\/zendesk_mobile_sdks_ios\/MessagingSDK\/MessagingSDK\/Source\/Messaging.swift",
-      "kind": "BooleanLiteral",
-      "offset": 11030,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/admin\/actions-runner\/_work\/zendesk_mobile_sdks_ios\/zendesk_mobile_sdks_ios\/MessagingSDK\/MessagingSDK\/Source\/Messaging.swift",
-      "kind": "BooleanLiteral",
-      "offset": 11187,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/admin\/actions-runner\/_work\/zendesk_mobile_sdks_ios\/zendesk_mobile_sdks_ios\/MessagingSDK\/MessagingSDK\/Source\/Messaging.swift",
-      "kind": "BooleanLiteral",
-      "offset": 11362,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/admin\/actions-runner\/_work\/zendesk_mobile_sdks_ios\/zendesk_mobile_sdks_ios\/MessagingSDK\/MessagingSDK\/Source\/Messaging.swift",
-      "kind": "BooleanLiteral",
-      "offset": 13809,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/admin\/actions-runner\/_work\/zendesk_mobile_sdks_ios\/zendesk_mobile_sdks_ios\/MessagingSDK\/MessagingSDK\/Source\/Messaging.swift",
-      "kind": "BooleanLiteral",
-      "offset": 13941,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/admin\/actions-runner\/_work\/zendesk_mobile_sdks_ios\/zendesk_mobile_sdks_ios\/MessagingSDK\/MessagingSDK\/Source\/Messaging.swift",
-      "kind": "Array",
-      "offset": 15359,
-      "length": 2,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/admin\/actions-runner\/_work\/zendesk_mobile_sdks_ios\/zendesk_mobile_sdks_ios\/MessagingSDK\/MessagingSDK\/Source\/Messaging.swift",
-      "kind": "BooleanLiteral",
-      "offset": 15796,
-      "length": 4,
-      "value": "true"
-    },
-    {
       "filePath": "\/Users\/admin\/actions-runner\/_work\/zendesk_mobile_sdks_ios\/zendesk_mobile_sdks_ios\/Common\/Common\/BundleUtils.swift",
       "kind": "StringLiteral",
       "offset": 1509,
@@ -2972,100 +3060,9 @@
     {
       "filePath": "\/Users\/admin\/actions-runner\/_work\/zendesk_mobile_sdks_ios\/zendesk_mobile_sdks_ios\/Common\/Common\/BundleUtils.swift",
       "kind": "StringLiteral",
-      "offset": 2136,
-      "length": 13,
-      "value": "\"Localizable\""
-    },
-    {
-      "filePath": "\/Users\/admin\/actions-runner\/_work\/zendesk_mobile_sdks_ios\/zendesk_mobile_sdks_ios\/Common\/Common\/BundleUtils.swift",
-      "kind": "StringLiteral",
       "offset": 3020,
       "length": 2,
       "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/admin\/actions-runner\/_work\/zendesk_mobile_sdks_ios\/zendesk_mobile_sdks_ios\/MessagingSDK\/MessagingSDK\/Source\/MessagingDataSource.swift",
-      "kind": "Array",
-      "offset": 2300,
-      "length": 2,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/admin\/actions-runner\/_work\/zendesk_mobile_sdks_ios\/zendesk_mobile_sdks_ios\/MessagingSDK\/MessagingSDK\/Source\/MessagingDataSource.swift",
-      "kind": "Array",
-      "offset": 3415,
-      "length": 2,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/admin\/actions-runner\/_work\/zendesk_mobile_sdks_ios\/zendesk_mobile_sdks_ios\/MessagingSDK\/MessagingSDK\/Source\/MessagingDataSource.swift",
-      "kind": "Array",
-      "offset": 3457,
-      "length": 2,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/admin\/actions-runner\/_work\/zendesk_mobile_sdks_ios\/zendesk_mobile_sdks_ios\/MessagingSDK\/MessagingSDK\/Source\/MessagingDataSource.swift",
-      "kind": "Array",
-      "offset": 3499,
-      "length": 2,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/admin\/actions-runner\/_work\/zendesk_mobile_sdks_ios\/zendesk_mobile_sdks_ios\/MessagingSDK\/MessagingSDK\/Source\/MessagingDataSource.swift",
-      "kind": "BooleanLiteral",
-      "offset": 3773,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/admin\/actions-runner\/_work\/zendesk_mobile_sdks_ios\/zendesk_mobile_sdks_ios\/MessagingSDK\/MessagingSDK\/Source\/MessagingDataSource.swift",
-      "kind": "BooleanLiteral",
-      "offset": 3844,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/admin\/actions-runner\/_work\/zendesk_mobile_sdks_ios\/zendesk_mobile_sdks_ios\/MessagingSDK\/MessagingSDK\/Source\/MessagingDataSource.swift",
-      "kind": "BooleanLiteral",
-      "offset": 4127,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/admin\/actions-runner\/_work\/zendesk_mobile_sdks_ios\/zendesk_mobile_sdks_ios\/MessagingSDK\/MessagingSDK\/Source\/MessagingDataSource.swift",
-      "kind": "BooleanLiteral",
-      "offset": 4418,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/admin\/actions-runner\/_work\/zendesk_mobile_sdks_ios\/zendesk_mobile_sdks_ios\/MessagingSDK\/MessagingSDK\/Source\/MessagingDataSource.swift",
-      "kind": "Array",
-      "offset": 4799,
-      "length": 2,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/admin\/actions-runner\/_work\/zendesk_mobile_sdks_ios\/zendesk_mobile_sdks_ios\/MessagingSDK\/MessagingSDK\/Source\/MessagingDataSource.swift",
-      "kind": "BooleanLiteral",
-      "offset": 5381,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/admin\/actions-runner\/_work\/zendesk_mobile_sdks_ios\/zendesk_mobile_sdks_ios\/MessagingSDK\/MessagingSDK\/Source\/MessagingDataSource.swift",
-      "kind": "BooleanLiteral",
-      "offset": 5409,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/admin\/actions-runner\/_work\/zendesk_mobile_sdks_ios\/zendesk_mobile_sdks_ios\/MessagingSDK\/MessagingSDK\/Source\/MessagingDataSource.swift",
-      "kind": "BooleanLiteral",
-      "offset": 5437,
-      "length": 5,
-      "value": "false"
     },
     {
       "filePath": "\/Users\/admin\/actions-runner\/_work\/zendesk_mobile_sdks_ios\/zendesk_mobile_sdks_ios\/MessagingSDK\/MessagingSDK\/Source\/MessagingDataSource.swift",
@@ -3089,97 +3086,6 @@
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/admin\/actions-runner\/_work\/zendesk_mobile_sdks_ios\/zendesk_mobile_sdks_ios\/MessagingSDK\/MessagingSDK\/Source\/MessagingDataSource.swift",
-      "kind": "BooleanLiteral",
-      "offset": 6327,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/admin\/actions-runner\/_work\/zendesk_mobile_sdks_ios\/zendesk_mobile_sdks_ios\/MessagingSDK\/MessagingSDK\/Source\/MessagingDataSource.swift",
-      "kind": "BooleanLiteral",
-      "offset": 6382,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/admin\/actions-runner\/_work\/zendesk_mobile_sdks_ios\/zendesk_mobile_sdks_ios\/MessagingSDK\/MessagingSDK\/Source\/ConversationLog\/LoggableEvents\/ArticlesResponse+LoggableMessage.swift",
-      "kind": "StringLiteral",
-      "offset": 791,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/admin\/actions-runner\/_work\/zendesk_mobile_sdks_ios\/zendesk_mobile_sdks_ios\/MessagingSDK\/MessagingSDK\/Source\/ConversationLog\/LoggableEvents\/ArticlesResponse+LoggableMessage.swift",
-      "kind": "IntegerLiteral",
-      "offset": 832,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/admin\/actions-runner\/_work\/zendesk_mobile_sdks_ios\/zendesk_mobile_sdks_ios\/MessagingSDK\/MessagingSDK\/Source\/ConversationLog\/LoggableEvents\/ArticlesResponse+LoggableMessage.swift",
-      "kind": "IntegerLiteral",
-      "offset": 949,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/admin\/actions-runner\/_work\/zendesk_mobile_sdks_ios\/zendesk_mobile_sdks_ios\/MessagingSDK\/MessagingSDK\/Source\/ConversationLog\/LoggableEvents\/ArticlesResponse+LoggableMessage.swift",
-      "kind": "StringLiteral",
-      "offset": 1051,
-      "length": 33,
-      "value": "\"\n* \""
-    },
-    {
-      "filePath": "\/Users\/admin\/actions-runner\/_work\/zendesk_mobile_sdks_ios\/zendesk_mobile_sdks_ios\/MessagingSDK\/MessagingSDK\/Source\/ConversationLog\/LoggableEvents\/ArticlesResponse+LoggableMessage.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1076,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/admin\/actions-runner\/_work\/zendesk_mobile_sdks_ios\/zendesk_mobile_sdks_ios\/MessagingSDK\/MessagingSDK\/Source\/ConversationLog\/LoggableEvents\/ArticlesResponse+LoggableMessage.swift",
-      "kind": "StringLiteral",
-      "offset": 1083,
-      "length": 1,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/admin\/actions-runner\/_work\/zendesk_mobile_sdks_ios\/zendesk_mobile_sdks_ios\/MessagingSDK\/MessagingSDK\/Source\/ConversationLog\/LoggableEvents\/ArticlesResponse+LoggableMessage.swift",
-      "kind": "StringLiteral",
-      "offset": 1244,
-      "length": 15,
-      "value": "\"\n* \""
-    },
-    {
-      "filePath": "\/Users\/admin\/actions-runner\/_work\/zendesk_mobile_sdks_ios\/zendesk_mobile_sdks_ios\/MessagingSDK\/MessagingSDK\/Source\/ConversationLog\/LoggableEvents\/ArticlesResponse+LoggableMessage.swift",
-      "kind": "StringLiteral",
-      "offset": 1258,
-      "length": 3,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/admin\/actions-runner\/_work\/zendesk_mobile_sdks_ios\/zendesk_mobile_sdks_ios\/MessagingSDK\/MessagingSDK\/Source\/ConversationLog\/LoggableEvents\/ArticlesResponse+LoggableMessage.swift",
-      "kind": "StringLiteral",
-      "offset": 1287,
-      "length": 27,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/admin\/actions-runner\/_work\/zendesk_mobile_sdks_ios\/zendesk_mobile_sdks_ios\/MessagingSDK\/MessagingSDK\/Source\/ConversationLog\/LoggableEvents\/ArticlesResponse+LoggableMessage.swift",
-      "kind": "StringLiteral",
-      "offset": 1298,
-      "length": 1,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/admin\/actions-runner\/_work\/zendesk_mobile_sdks_ios\/zendesk_mobile_sdks_ios\/MessagingSDK\/MessagingSDK\/Source\/ConversationLog\/LoggableEvents\/ArticlesResponse+LoggableMessage.swift",
-      "kind": "StringLiteral",
-      "offset": 1313,
-      "length": 1,
-      "value": "\"\""
-    },
-    {
       "filePath": "\/Users\/admin\/actions-runner\/_work\/zendesk_mobile_sdks_ios\/zendesk_mobile_sdks_ios\/MessagingSDK\/MessagingSDK\/Source\/MessagingDelegate.swift",
       "kind": "IntegerLiteral",
       "offset": 695,
@@ -3220,69 +3126,6 @@
       "offset": 907,
       "length": 22,
       "value": "6"
-    },
-    {
-      "filePath": "\/Users\/admin\/actions-runner\/_work\/zendesk_mobile_sdks_ios\/zendesk_mobile_sdks_ios\/MessagingSDK\/MessagingSDK\/Source\/MessagingDelegate.swift",
-      "kind": "IntegerLiteral",
-      "offset": 695,
-      "length": 14,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/admin\/actions-runner\/_work\/zendesk_mobile_sdks_ios\/zendesk_mobile_sdks_ios\/MessagingSDK\/MessagingSDK\/Source\/MessagingDelegate.swift",
-      "kind": "IntegerLiteral",
-      "offset": 719,
-      "length": 13,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/admin\/actions-runner\/_work\/zendesk_mobile_sdks_ios\/zendesk_mobile_sdks_ios\/MessagingSDK\/MessagingSDK\/Source\/MessagingDelegate.swift",
-      "kind": "IntegerLiteral",
-      "offset": 742,
-      "length": 17,
-      "value": "3"
-    },
-    {
-      "filePath": "\/Users\/admin\/actions-runner\/_work\/zendesk_mobile_sdks_ios\/zendesk_mobile_sdks_ios\/MessagingSDK\/MessagingSDK\/Source\/MessagingDelegate.swift",
-      "kind": "IntegerLiteral",
-      "offset": 769,
-      "length": 16,
-      "value": "4"
-    },
-    {
-      "filePath": "\/Users\/admin\/actions-runner\/_work\/zendesk_mobile_sdks_ios\/zendesk_mobile_sdks_ios\/MessagingSDK\/MessagingSDK\/Source\/MessagingDelegate.swift",
-      "kind": "IntegerLiteral",
-      "offset": 795,
-      "length": 21,
-      "value": "5"
-    },
-    {
-      "filePath": "\/Users\/admin\/actions-runner\/_work\/zendesk_mobile_sdks_ios\/zendesk_mobile_sdks_ios\/MessagingSDK\/MessagingSDK\/Source\/MessagingDelegate.swift",
-      "kind": "IntegerLiteral",
-      "offset": 907,
-      "length": 22,
-      "value": "6"
-    },
-    {
-      "filePath": "\/Users\/admin\/actions-runner\/_work\/zendesk_mobile_sdks_ios\/zendesk_mobile_sdks_ios\/MessagingSDK\/MessagingSDK\/Source\/ConversationLog\/LoggableEvents\/TransferResponse+LoggableMessage.swift",
-      "kind": "StringLiteral",
-      "offset": 816,
-      "length": 28,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/admin\/actions-runner\/_work\/zendesk_mobile_sdks_ios\/zendesk_mobile_sdks_ios\/MessagingSDK\/MessagingSDK\/Source\/ConversationLog\/LoggableEvents\/TransferResponse+LoggableMessage.swift",
-      "kind": "StringLiteral",
-      "offset": 822,
-      "length": 1,
-      "value": "\"\n* \""
-    },
-    {
-      "filePath": "\/Users\/admin\/actions-runner\/_work\/zendesk_mobile_sdks_ios\/zendesk_mobile_sdks_ios\/MessagingSDK\/MessagingSDK\/Source\/ConversationLog\/LoggableEvents\/TransferResponse+LoggableMessage.swift",
-      "kind": "StringLiteral",
-      "offset": 843,
-      "length": 3,
-      "value": "\"\""
     },
     {
       "filePath": "\/Users\/admin\/actions-runner\/_work\/zendesk_mobile_sdks_ios\/zendesk_mobile_sdks_ios\/MessagingSDK\/MessagingSDK\/Source\/ConversationLog\/ConversationLog.swift",
@@ -3306,27 +3149,6 @@
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/admin\/actions-runner\/_work\/zendesk_mobile_sdks_ios\/zendesk_mobile_sdks_ios\/MessagingSDK\/MessagingSDK\/Source\/Engines\/Engines.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1529,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/admin\/actions-runner\/_work\/zendesk_mobile_sdks_ios\/zendesk_mobile_sdks_ios\/MessagingSDK\/MessagingSDK\/Source\/Engines\/Engines.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2341,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/admin\/actions-runner\/_work\/zendesk_mobile_sdks_ios\/zendesk_mobile_sdks_ios\/MessagingSDK\/MessagingSDK\/Source\/Engines\/Engines.swift",
-      "kind": "BooleanLiteral",
-      "offset": 2448,
-      "length": 4,
-      "value": "true"
-    },
-    {
       "filePath": "\/Users\/admin\/actions-runner\/_work\/zendesk_mobile_sdks_ios\/zendesk_mobile_sdks_ios\/MessagingSDK\/MessagingSDK\/Source\/Typings\/EndUserTypingHandler.swift",
       "kind": "FloatLiteral",
       "offset": 706,
@@ -3341,30 +3163,9 @@
       "value": "false"
     },
     {
-      "filePath": "\/Users\/admin\/actions-runner\/_work\/zendesk_mobile_sdks_ios\/zendesk_mobile_sdks_ios\/MessagingSDK\/MessagingSDK\/Source\/Typings\/EndUserTypingHandler.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1530,
-      "length": 5,
-      "value": "false"
-    },
-    {
       "filePath": "\/Users\/admin\/actions-runner\/_work\/zendesk_mobile_sdks_ios\/zendesk_mobile_sdks_ios\/MessagingSDK\/MessagingSDK\/Source\/MessageItemModelMapper.swift",
       "kind": "BooleanLiteral",
       "offset": 726,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/admin\/actions-runner\/_work\/zendesk_mobile_sdks_ios\/zendesk_mobile_sdks_ios\/MessagingSDK\/MessagingSDK\/Source\/MessageItemModelMapper.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1613,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/admin\/actions-runner\/_work\/zendesk_mobile_sdks_ios\/zendesk_mobile_sdks_ios\/MessagingSDK\/MessagingSDK\/Source\/MessageItemModelMapper.swift",
-      "kind": "BooleanLiteral",
-      "offset": 6481,
       "length": 5,
       "value": "false"
     },
@@ -3474,158 +3275,11 @@
       "value": "\"Answer Bot\""
     },
     {
-      "filePath": "\/Users\/admin\/actions-runner\/_work\/zendesk_mobile_sdks_ios\/zendesk_mobile_sdks_ios\/MessagingSDK\/MessagingSDK\/Source\/ConversationLog\/ConversationLogFormatter.swift",
-      "kind": "StringLiteral",
-      "offset": 924,
-      "length": 56,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/admin\/actions-runner\/_work\/zendesk_mobile_sdks_ios\/zendesk_mobile_sdks_ios\/MessagingSDK\/MessagingSDK\/Source\/ConversationLog\/ConversationLogFormatter.swift",
-      "kind": "StringLiteral",
-      "offset": 979,
-      "length": 1,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/admin\/actions-runner\/_work\/zendesk_mobile_sdks_ios\/zendesk_mobile_sdks_ios\/MessagingSDK\/MessagingSDK\/Source\/ConversationLog\/ConversationLogFormatter.swift",
-      "kind": "StringLiteral",
-      "offset": 1081,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/admin\/actions-runner\/_work\/zendesk_mobile_sdks_ios\/zendesk_mobile_sdks_ios\/MessagingSDK\/MessagingSDK\/Source\/ConversationLog\/ConversationLogFormatter.swift",
-      "kind": "StringLiteral",
-      "offset": 1153,
-      "length": 46,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/admin\/actions-runner\/_work\/zendesk_mobile_sdks_ios\/zendesk_mobile_sdks_ios\/MessagingSDK\/MessagingSDK\/Source\/ConversationLog\/ConversationLogFormatter.swift",
-      "kind": "StringLiteral",
-      "offset": 1197,
-      "length": 1,
-      "value": "\" \""
-    },
-    {
-      "filePath": "\/Users\/admin\/actions-runner\/_work\/zendesk_mobile_sdks_ios\/zendesk_mobile_sdks_ios\/MessagingSDK\/MessagingSDK\/Source\/ConversationLog\/ConversationLogFormatter.swift",
-      "kind": "StringLiteral",
-      "offset": 1225,
-      "length": 59,
-      "value": "\"\n%@ \""
-    },
-    {
-      "filePath": "\/Users\/admin\/actions-runner\/_work\/zendesk_mobile_sdks_ios\/zendesk_mobile_sdks_ios\/MessagingSDK\/MessagingSDK\/Source\/ConversationLog\/ConversationLogFormatter.swift",
-      "kind": "StringLiteral",
-      "offset": 1240,
-      "length": 1,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/admin\/actions-runner\/_work\/zendesk_mobile_sdks_ios\/zendesk_mobile_sdks_ios\/MessagingSDK\/MessagingSDK\/Source\/ConversationLog\/ConversationLogFormatter.swift",
-      "kind": "StringLiteral",
-      "offset": 1279,
-      "length": 1,
-      "value": "\": %@\""
-    },
-    {
-      "filePath": "\/Users\/admin\/actions-runner\/_work\/zendesk_mobile_sdks_ios\/zendesk_mobile_sdks_ios\/MessagingSDK\/MessagingSDK\/Source\/ConversationLog\/ConversationLogFormatter.swift",
-      "kind": "StringLiteral",
-      "offset": 1414,
-      "length": 8,
-      "value": "\" [bot]\""
-    },
-    {
-      "filePath": "\/Users\/admin\/actions-runner\/_work\/zendesk_mobile_sdks_ios\/zendesk_mobile_sdks_ios\/MessagingSDK\/MessagingSDK\/Source\/ConversationLog\/ConversationLogFormatter.swift",
-      "kind": "StringLiteral",
-      "offset": 1425,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/admin\/actions-runner\/_work\/zendesk_mobile_sdks_ios\/zendesk_mobile_sdks_ios\/MessagingSDK\/MessagingSDK\/Source\/ConversationLog\/ConversationLogFormatter.swift",
-      "kind": "StringLiteral",
-      "offset": 1443,
-      "length": 48,
-      "value": "\"\n%@ \""
-    },
-    {
-      "filePath": "\/Users\/admin\/actions-runner\/_work\/zendesk_mobile_sdks_ios\/zendesk_mobile_sdks_ios\/MessagingSDK\/MessagingSDK\/Source\/ConversationLog\/ConversationLogFormatter.swift",
-      "kind": "StringLiteral",
-      "offset": 1474,
-      "length": 1,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/admin\/actions-runner\/_work\/zendesk_mobile_sdks_ios\/zendesk_mobile_sdks_ios\/MessagingSDK\/MessagingSDK\/Source\/ConversationLog\/ConversationLogFormatter.swift",
-      "kind": "StringLiteral",
-      "offset": 1486,
-      "length": 1,
-      "value": "\": %@\""
-    },
-    {
-      "filePath": "\/Users\/admin\/actions-runner\/_work\/zendesk_mobile_sdks_ios\/zendesk_mobile_sdks_ios\/MessagingSDK\/MessagingSDK\/Source\/ConversationLog\/ConversationLogFormatter.swift",
-      "kind": "StringLiteral",
-      "offset": 1801,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/admin\/actions-runner\/_work\/zendesk_mobile_sdks_ios\/zendesk_mobile_sdks_ios\/MessagingSDK\/MessagingSDK\/Source\/ConversationLog\/ConversationLogFormatter.swift",
-      "kind": "StringLiteral",
-      "offset": 2170,
-      "length": 50,
-      "value": "\"\n%@ \""
-    },
-    {
-      "filePath": "\/Users\/admin\/actions-runner\/_work\/zendesk_mobile_sdks_ios\/zendesk_mobile_sdks_ios\/MessagingSDK\/MessagingSDK\/Source\/ConversationLog\/ConversationLogFormatter.swift",
-      "kind": "StringLiteral",
-      "offset": 2215,
-      "length": 1,
-      "value": "\": %@\""
-    },
-    {
-      "filePath": "\/Users\/admin\/actions-runner\/_work\/zendesk_mobile_sdks_ios\/zendesk_mobile_sdks_ios\/Common\/Common\/Array+Indices.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1012,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/admin\/actions-runner\/_work\/zendesk_mobile_sdks_ios\/zendesk_mobile_sdks_ios\/Common\/Common\/Array+Indices.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1015,
-      "length": 1,
-      "value": "0"
-    },
-    {
       "filePath": "\/Users\/admin\/actions-runner\/_work\/zendesk_mobile_sdks_ios\/zendesk_mobile_sdks_ios\/MessagingSDK\/MessagingSDK\/Source\/Configuration\/MessagingConfiguration.swift",
       "kind": "BooleanLiteral",
       "offset": 1684,
       "length": 5,
       "value": "false"
-    },
-    {
-      "filePath": "\/Users\/admin\/actions-runner\/_work\/zendesk_mobile_sdks_ios\/zendesk_mobile_sdks_ios\/MessagingSDK\/MessagingSDK\/Source\/ConversationLog\/LoggableEvents\/ActionResponse+LoggableMessage.swift",
-      "kind": "StringLiteral",
-      "offset": 811,
-      "length": 28,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/admin\/actions-runner\/_work\/zendesk_mobile_sdks_ios\/zendesk_mobile_sdks_ios\/MessagingSDK\/MessagingSDK\/Source\/ConversationLog\/LoggableEvents\/ActionResponse+LoggableMessage.swift",
-      "kind": "StringLiteral",
-      "offset": 817,
-      "length": 1,
-      "value": "\"\n* \""
-    },
-    {
-      "filePath": "\/Users\/admin\/actions-runner\/_work\/zendesk_mobile_sdks_ios\/zendesk_mobile_sdks_ios\/MessagingSDK\/MessagingSDK\/Source\/ConversationLog\/LoggableEvents\/ActionResponse+LoggableMessage.swift",
-      "kind": "StringLiteral",
-      "offset": 838,
-      "length": 3,
-      "value": "\"\""
     },
     {
       "filePath": "\/Users\/admin\/Library\/Developer\/Xcode\/DerivedData\/MobileSDKs-cwitlnobnjydkrgezoczllpmunkg\/Build\/Intermediates.noindex\/ArchiveIntermediates\/MessagingSDK-Release\/IntermediateBuildFilesPath\/MessagingSDK.build\/Release-iphonesimulator\/MessagingSDK-Release.build\/DerivedSources\/GeneratedAssetSymbols.swift",

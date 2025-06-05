@@ -1,0 +1,5 @@
+"message.log.article.selection.formatter" = "%1$@ otvoril/-a článok „%2$@“";
+"message.log.article.suggestion.message" = "Našiel som tieto články:";
+"message.log.default.visitor.name" = "Návštevník";
+"message.log.message.failed_to_send" = "[Odoslanie zlyhalo]";
+"message.log.transfer.option.selection.formatter" = "%1$@ vybral/-a %2$@";

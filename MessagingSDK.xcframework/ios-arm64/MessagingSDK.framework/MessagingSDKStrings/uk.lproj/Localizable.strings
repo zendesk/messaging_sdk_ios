@@ -1,0 +1,5 @@
+"message.log.article.selection.formatter" = "Користувач %1$@ відкриває статтю «%2$@»";
+"message.log.article.suggestion.message" = "Я знайшов такі статті:";
+"message.log.default.visitor.name" = "Відвідувач";
+"message.log.message.failed_to_send" = "[Не вдалося надіслати]";
+"message.log.transfer.option.selection.formatter" = "%1$@ вибрав %2$@";
