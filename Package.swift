@@ -19,7 +19,7 @@ let package = Package(
                  .exact("6.0.2")),
         .package(name: "ZendeskCommonUISDK",
                  url: "https://github.com/zendesk/commonui_sdk_ios",
-                 .exact("9.2.0"))
+                 .exact("9.3.0"))
     ],
     targets: [
         .binaryTarget(
